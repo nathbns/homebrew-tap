@@ -1,25 +1,25 @@
 class Gitact < Formula
   desc "Modern interactive CLI for exploring GitHub profiles, repositories, and activity"
-  homepage "https://github.com/yourusername/gitact"
+  homepage "https://github.com/nathbns/gitact"
   version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yourusername/gitact/releases/download/v#{version}/gitact-#{version}-darwin-amd64.tar.gz"
+      url "https://github.com/nathbns/gitact/releases/download/v#{version}/gitact-#{version}-darwin-amd64.tar.gz"
       sha256 "REPLACE_WITH_ACTUAL_SHA256_FOR_DARWIN_AMD64"
     else
-      url "https://github.com/yourusername/gitact/releases/download/v#{version}/gitact-#{version}-darwin-arm64.tar.gz"
+      url "https://github.com/nathbns/gitact/releases/download/v#{version}/gitact-#{version}-darwin-arm64.tar.gz"
       sha256 "REPLACE_WITH_ACTUAL_SHA256_FOR_DARWIN_ARM64"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/yourusername/gitact/releases/download/v#{version}/gitact-#{version}-linux-amd64.tar.gz"
+      url "https://github.com/nathbns/gitact/releases/download/v#{version}/gitact-#{version}-linux-amd64.tar.gz"
       sha256 "REPLACE_WITH_ACTUAL_SHA256_FOR_LINUX_AMD64"
     else
-      url "https://github.com/yourusername/gitact/releases/download/v#{version}/gitact-#{version}-linux-arm64.tar.gz"
+      url "https://github.com/nathbns/gitact/releases/download/v#{version}/gitact-#{version}-linux-arm64.tar.gz"
       sha256 "REPLACE_WITH_ACTUAL_SHA256_FOR_LINUX_ARM64"
     end
   end
@@ -76,3 +76,4 @@ class Gitact < Formula
     EOS
   end
 end
+
