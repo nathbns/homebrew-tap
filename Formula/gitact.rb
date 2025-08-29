@@ -7,22 +7,14 @@ class Gitact < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/nathbns/gitact/releases/download/v#{version}/gitact-#{version}-darwin-amd64.tar.gz"
-      sha256 "REPLACE_WITH_ACTUAL_SHA256_FOR_DARWIN_AMD64"
+      sha256 "061957366fac68763d4ace8b2e3e536fec62fbb6bc61e27eb534d2795c857f42"
     else
       url "https://github.com/nathbns/gitact/releases/download/v#{version}/gitact-#{version}-darwin-arm64.tar.gz"
-      sha256 "REPLACE_WITH_ACTUAL_SHA256_FOR_DARWIN_ARM64"
+      sha256 "3f9fedfa727fc6a71c8e7faab0176698f0351bfe09cb878d1d36387711aabc71"
     end
   end
 
-  on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/nathbns/gitact/releases/download/v#{version}/gitact-#{version}-linux-amd64.tar.gz"
-      sha256 "REPLACE_WITH_ACTUAL_SHA256_FOR_LINUX_AMD64"
-    else
-      url "https://github.com/nathbns/gitact/releases/download/v#{version}/gitact-#{version}-linux-arm64.tar.gz"
-      sha256 "REPLACE_WITH_ACTUAL_SHA256_FOR_LINUX_ARM64"
-    end
-  end
+
 
   def install
     bin.install "gitact"
@@ -76,4 +68,3 @@ class Gitact < Formula
     EOS
   end
 end
-
