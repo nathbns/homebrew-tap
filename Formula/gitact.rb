@@ -7,10 +7,10 @@ class Gitact < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/nathbns/gitact/releases/download/v#{version}/gitact-#{version}-darwin-amd64.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      sha256 "eb0adf8d2616fcbb61e394ebae38cef5f037c04b7c3b0b0630f0fac955c44886"
     else
       url "https://github.com/nathbns/gitact/releases/download/v#{version}/gitact-#{version}-darwin-arm64.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      sha256 "68ec79ff8e0f923c140aceacf912153e6729f81d2495c6444b9bc10e65642f0d"
     end
   end
 
