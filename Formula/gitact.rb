@@ -1,16 +1,16 @@
 class Gitact < Formula
   desc "Modern interactive CLI for exploring GitHub profiles, repositories, and activity"
   homepage "https://github.com/nathbns/gitact"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/nathbns/gitact/releases/download/v#{version}/gitact-#{version}-darwin-amd64.tar.gz"
-      sha256 "061957366fac68763d4ace8b2e3e536fec62fbb6bc61e27eb534d2795c857f42"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     else
       url "https://github.com/nathbns/gitact/releases/download/v#{version}/gitact-#{version}-darwin-arm64.tar.gz"
-      sha256 "3f9fedfa727fc6a71c8e7faab0176698f0351bfe09cb878d1d36387711aabc71"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   end
 
